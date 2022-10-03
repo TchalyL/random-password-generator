@@ -24,10 +24,16 @@ def generate_password():
   print(pwd)
 
 
-option = input("Generate random password? (y/n): ").lower()
 
-if option == 'y':
-  generate_password()
+while True:
+  option = input("Generate random password? (y/n): ").lower()
+
+  if option == 'y':
+    generate_password()
+  elif option == 'n':
+    break
+  else:
+    print("Invalid Input! Please enter only 'y' or 'o'")
 
 
 
